@@ -1,0 +1,155 @@
+.audit-page {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* ── Controls ── */
+.audit-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 16px 20px;
+}
+
+.audit-controls-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.audit-controls-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.type-filters {
+  display: flex;
+  gap: 6px;
+}
+
+.filter-active {
+  background: var(--accent-cyan-dim) !important;
+  color: var(--accent-cyan) !important;
+  border-color: rgba(0,212,255,0.3) !important;
+}
+
+/* ── Audit Stats ── */
+.audit-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+  min-width: 52px;
+}
+
+.audit-stat-val {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: var(--font-display);
+  color: var(--text-primary);
+  line-height: 1;
+}
+
+.audit-stat-key {
+  font-size: 10px;
+  color: var(--text-tertiary);
+  white-space: nowrap;
+}
+
+/* ── RBI Banner ── */
+.rbi-banner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 18px;
+  background: var(--accent-purple-dim);
+  border: 1px solid rgba(139,92,246,0.2);
+  border-radius: var(--radius-md);
+  font-size: 12px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.rbi-icon {
+  font-size: 18px;
+  color: var(--accent-purple);
+  flex-shrink: 0;
+}
+
+/* ── Type icon ── */
+.type-icon {
+  font-size: 12px;
+  color: var(--text-tertiary);
+}
+
+/* ── Expanded rows ── */
+.row-expanded td { background: var(--bg-hover); }
+
+.expanded-row td {
+  padding: 0 !important;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.expanded-content {
+  padding: 20px 24px;
+  background: var(--bg-elevated);
+  border-top: 1px solid var(--accent-purple-dim);
+}
+
+.expanded-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+}
+
+.exp-section { display: flex; flex-direction: column; gap: 10px; }
+
+.exp-section-title {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-tertiary);
+  margin-bottom: 4px;
+}
+
+.exp-field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.exp-field span:first-child { font-size: 12px; color: var(--text-tertiary); }
+.exp-field span:last-child  { font-size: 11px; color: var(--text-primary); }
+
+/* Hash display */
+.hash-display {
+  font-size: 10px;
+  line-height: 1.8;
+  color: var(--accent-purple);
+  word-break: break-all;
+  background: var(--bg-card);
+  padding: 10px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(139,92,246,0.2);
+  letter-spacing: 0.04em;
+}
+
+/* ── Empty state ── */
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 60px;
+  color: var(--text-tertiary);
+  font-family: var(--font-display);
+  font-size: 14px;
+}
